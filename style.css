@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'David Libre', serif;
+    letter-spacing: 0.5px;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+}
+#top {
+    height: 100px;
+    background-size: 100%;
+    width: 100%;
+    background-image: url('top_image.png');
+}
+#top_menu {
+
+}
+#top_menu ul {
+    list-style-type: none;
+    /*border: 1px solid red;*/
+    /*position: fixed;*/
+    margin-top: 42px;
+    font-size: 17px;
+}
+#top_menu li {
+    float: left;
+    /*background-color: white;*/
+    /*border: 1px solid black;*/
+    padding: 20px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#top_menu li a {
+    text-decoration: none;
+    color: white;
+}
+#top_menu li:hover {
+    background-color: #bdbdbd;
+    color: white;
+    opacity: 0.9;
+}

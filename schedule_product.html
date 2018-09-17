@@ -1,0 +1,126 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+    <title>  
+          
+    </title>
+<script src="jquery-2.1.4.min.js"></script>     <!-- Use JQuery from Google CDN -->
+<link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'David Libre', serif;
+            letter-spacing: 0.5px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        #top {
+            height: 100px;
+            background-size: 100%;
+            width: 100%;
+            background-image: url('top_image.png');
+        }
+        #top_menu {
+
+        }
+        #top_menu ul {
+            list-style-type: none;
+            /*border: 1px solid red;*/
+            /*position: fixed;*/
+            margin-top: 42px;
+            font-size: 17px;
+        }
+        #top_menu li {
+            float: left;
+            /*background-color: white;*/
+            /*border: 1px solid black;*/
+            padding: 20px;
+            color: white;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        #top_menu li a {
+            text-decoration: none;
+            color: white;
+        }
+        #top_menu li:hover {
+            background-color: #bdbdbd;
+            color: white;
+            opacity: 0.9;
+        }
+        #scheduling_form {
+            /*border: 1px solid pink;*/
+            width: 37%;
+            margin: 0 auto;
+        }
+        #scheduling_form input {
+            /*border: 1px solid black;*/
+            padding: 10px;
+            width: 150px;
+            font-size: 15px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            margin-left: 10px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #scheduling_form #submit_button {
+            margin: 0 auto;
+            border: 0px;
+            /*width: 100px;*/
+            display: block;
+            border-color: #009688;
+            background-color: #009688;
+            color: white;
+            font-size: 20px;
+            font-family: 'David Libre', serif;
+            letter-spacing: 0.5px;
+            padding: 16px;
+        }
+        #scheduling_form p {
+            /*border: 1px solid blue;*/
+        }
+
+     </style>
+</head>  
+  
+<body>  
+
+<div id="top">
+    <div style="float: left;color: white; font-size:40px;padding:30px;margin-left:30px;">FlashSale</div>
+    <div style="float:right;">
+        <nav id="top_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule_product.html">Schedule product add to cart</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div>
+   <div style="margin: 0 auto;display: block; margin-top:50px; height: fill-content;padding: 20px; width: 75%;font-size: 17px;">
+
+        <form method="GET" action="https://www.amazon.in/gp/aws/cart/add.html">
+
+            <p><input type="hidden" name="AWSAccessKeyId" value="AKIAIKCDBO7HJSK2TX7Q" /></p><br/> 
+            <p><input type="hidden" name="AssociateTag" value="niraliacharya-21" /></p><br/> 
+                
+            <p>ASIN:<input type="text" name="ASIN.1"/><br/></p> 
+            <p>Quantity:<input type="text" name="Quantity.1"/><br/></p> 
+            <p>Enter product name<input type="text" name="product_name" placeholder="" /></p>
+            <p>Product time of sale<input type="time" name="time_of_sale" placeholder="1" /></p>
+            <div><input type="submit" value="Schedule" id="submit_button" /></div>
+        </form>
+
+    </div>
+</div>
+</body>  
+  
+</html> 
