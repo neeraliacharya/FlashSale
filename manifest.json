@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "FlashSale",
+	"description": "FlashSale",
+	"version": "1",
+	"author": "Nirali Acharya",
+	"browser_action": {
+		"default_icon": "tab-icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Have a good day"
+	},
+	"background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": false
+    },
+	"permissions": [ 
+		"activeTab", "identity"
+	],
+	"chrome_url_overrides" : {
+		"newtab": "index.html"
+	},
+	"content_security_policy": "script-src 'self' chrome-extension://kcohcjcpjnkicpekdbgaafogicmfobcm/login.html; object-src 'self'"	// "page_action": {
+ //      "default_popup": "popup.html"
+ //    }
+}
